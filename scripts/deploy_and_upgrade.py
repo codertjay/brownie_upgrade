@@ -16,6 +16,7 @@ def main():
     initializer = box.store, 1
     box_encoded_initializer_functions = encode_function_data(initializer)
 
+
     proxy = TransparentUpgradeableProxy.deploy(
         box.address,
         proxy_admin.address,
